@@ -1,0 +1,50 @@
+<!-- Adding navigation bar styling using bootstrap -->
+<nav class="navbar navbar-default"> 
+
+    <!-- Content to be fuild and responsive -->
+    <div class="container-fluid">
+
+        <!-- This is where site brand logo goes -->
+        <div class="navbar-header">
+            <a href="#" class="navbar-brand"> Recipe Book </a>
+        </div>
+
+        <!-- This class is used to create a collapsible section for navigation content. -->
+
+        <!-- The content of the navbar is enclosed within a <div> 
+            with the class "collapse navbar-collapse". 
+        This class is used to create a collapsible section for navigation content. -->
+        <div class="collapse navbar-collapse">
+            
+            <!-- 2 Unordered lists -->
+
+            <!-- list 1 Recipes and Shopping  navigation links-->
+            <ul class="nav navbar-nav">
+                <li><a href="#">Recipes</a></li>
+                <li><a href="#">Shopping</a></li>
+            </ul>
+
+
+            <!-- Navigation to the right -->
+            <ul class="nav navbar-nav navbar-right">
+                <!-- Item 1 in the list -->
+                <li class="dropdown"> 
+
+                    <!-- span it's used to apply styling or scripting
+                         to a specific section of text or inline content within a larger block of content.  -->
+
+                         <!-- role="button": The role attribute defines the role of the element for accessibility purposes. 
+                         In this case, it indicates that the anchor element is acting as a button, which can help screen readers and assistive technologies understand its purpose. -->
+                    <a href="#" class="dropdpwn-toggle" role="button">Manage <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li> <a href="#">Save Data</a> </li>
+                        <li> <a href="#">Fetch Data</a> </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<app-recipies></app-recipies>
+<app-shopping></app-shopping>
